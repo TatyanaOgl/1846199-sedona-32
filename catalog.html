@@ -27,9 +27,7 @@
                 </a>
                 <a class="navigation-link" href="#">
                     <span class="visually-hidden">Избранное</span>
-                    <button class="favorites" type="button">
-                        <span class="visually-hidden">Количество избранных</span>
-                    </button>
+                    <span class="favorites-number">12</span>
                 </a>
                 <a class="navigation-link" href="#">Хочу сюда!</a>
             </div>
@@ -108,18 +106,15 @@
                             </button>
                         </div>
                     </div>
-                    <div class="option-button-application">
-                        <button class="options-button">Применить</button>
-                    </div>
-                    <div class="options-button-discharge">
-                        <button class="options-discharge">Сбросить</button>
+                    <div class="options-button">
+                        <button class="options-application" type="submit">Применить</button>
+                        <button class="options-discharge" type="reset">Сбросить</button>
                     </div>
                 </fieldset>           
             </form>
         </section>
         <section class="housing-options">
             <p class="found">Найдено гостиниц: 38</p>
-                <label class="visually-hidden" for="sorting">Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
                     <option value="cheap">Сначала дешёвые</option>
                     <option value="expensive">Сначала дорогие</option>
@@ -127,17 +122,13 @@
                   </select>
             <div class="show-cards">
                 <a class="button button-cards" href="#">
-                <span class="visually-hidden">Показать карточки</span>
+                    <span class="visually-hidden">Показать карточки</span>
                 </a>
-            </div>
-            <div class="show-one">
-                <a class="button button-cards" href="#">
-                <span class="visually-hidden">Показать по одному</span>
+                <a class="button button-show-one" href="#">
+                    <span class="visually-hidden">Показать по одному</span>
                 </a>
-            </div>
-            <div class="show-list">
                 <a class="button button-list" href="#">
-                <span class="visually-hidden">Показать список</span>
+                    <span class="visually-hidden">Показать список</span>
                 </a>
             </div>
         </section>
@@ -149,10 +140,14 @@
                     </div>
                     <div class="housing-info-legend">
                         <h3 class="housing-info-title">Amara Resort & Spa</h3>
-                        <span class="housing-info-view">Гостиница</span>
-                        <span class="housing-info-price">От 4000 ₽</span>
-                        <a class="housing-info-button button" href="#">Подробнее</a>
-                        <button class="button-blue">В избранное</button>
+                        <div class="housing-info-description">
+                            <span class="housing-info-view">Гостиница</span>
+                            <span class="housing-info-price">От 4000 ₽</span>
+                        </div>
+                        <div class="button-housing-legend">
+                            <a class="housing-info-button button" href="#">Подробнее</a>
+                            <button class="button-blue">В избранное</button>
+                        </div>
                     </div>
                     <div class="housing-rating-legend">
                         <div class="rating">
@@ -170,10 +165,14 @@
                     </div>
                     <div class="housing-info-legend">
                         <h3 class="housing-info-title">Desert Quail Inn</h3>
-                        <span class="housing-info-view">Мотель</span>
-                        <span class="housing-info-price">От 3000 ₽</span>
-                        <a class="housing-info-button button" href="#">Подробнее</a>
-                        <button class="button-blue">В избранное</button>
+                        <div class="housing-info-description">
+                            <span class="housing-info-view">Мотель</span>
+                            <span class="housing-info-price">От 3000 ₽</span>
+                        </div>
+                        <div class="button-housing-legend">
+                            <a class="housing-info-button button" href="#">Подробнее</a>
+                            <button class="button-blue">В избранное</button>
+                        </div>
                     </div>
                     <div class="housing-rating-legend">
                         <div class="rating">
@@ -190,10 +189,14 @@
                     </div>
                     <div class="housing-info-legend">
                         <h3 class="housing-info-title">Villas at Poco Diablo</h3>
-                        <span class="housing-info-view">Апартаменты</span>
-                        <span class="housing-info-price">От 2000 ₽</span>
-                        <a class="housing-info-button button" href="#">Подробнее</a>
-                        <button class="button-grin">В избранном</button>
+                        <div class="housing-info-description">
+                            <span class="housing-info-view">Апартаменты</span>
+                            <span class="housing-info-price">От 2000 ₽</span>
+                        </div>
+                        <div class="button-housing-legend">
+                            <a class="housing-info-button button" href="#">Подробнее</a>
+                            <button class="button-grin">В избранном</button>
+                        </div>
                     </div>
                     <div class="housing-rating-legend">
                         <div class="rating">
@@ -209,10 +212,14 @@
                     </div>
                     <div class="housing-info-legend">
                         <h3 class="housing-info-title">GreenTree Inn</h3>
-                        <span class="housing-info-view">Гостиница</span>
-                        <span class="housing-info-price">От 3000 ₽</span>
-                        <a class="housing-info-button button" href="#">Подробнее</a>
-                        <button class="button-blue">В избранное</button>
+                        <div class="housing-info-description">
+                            <span class="housing-info-view">Гостиница</span>
+                            <span class="housing-info-price">От 3000 ₽</span>
+                        </div>
+                        <div class="button-housing-legend">
+                            <a class="housing-info-button button" href="#">Подробнее</a>
+                            <button class="button-blue">В избранное</button>
+                        </div>
                     </div>
                     <div class="housing-rating-legend">
                         <div class="rating">
@@ -223,31 +230,31 @@
                     </div>
                 </li>
             </ul>
-            <a class="button button-download" href="#">Загрузить еще</a>
-            <section class="pagination-link-pages">
-                <ul class="pagination">
-                    <li class="pagination-item">
-                        <a class="pagination-link pagination-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">3</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">4</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">…</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">10</a>
-                    </li>
-                </ul>
-            </section>
-            <label for="sorting">Гостиниц на странице:</label>
+        </section>
+        <a class="button button-download" href="#">Загрузить еще</a>
+        <section class="pagination-link-pages">
+            <ul class="pagination">
+                <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">…</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">10</a>
+                </li>
+            </ul>
             <div class="sorting-type">
+                <label for="sorting">Гостиниц на странице:</label>
                 <select class="select-control" id="sorting" name="sorting">                       
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -294,6 +301,5 @@
         <a class="footer-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">html academy</a>        
      </footer>
-
   </body>
 </html>
