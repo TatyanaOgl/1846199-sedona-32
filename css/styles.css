@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "PT Sans"; 
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    width: 1200px;
+    font-family: "PT Sans" sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+.greetings {
+    background-image: url("../img/header.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.advantages-header{
+    text-align: center;
+}
+.advantages-header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.advantages-header p {
+    font-weight: 400;
+    font-size: 22px;
+    color: #333333;
+}
+.color-blue {
+    color: #FFFFFF;
+    background-color: #83B3D3;
+}
+.color-blue h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.advantages-title-black {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+.advantages-description-text {
+    color: #333333;
+}
+.advantages-number {
+    color: #333333;
+}
+.number-white {
+    color: #FFFFFF;
+}
+.light-blue {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.blue-road {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+.reservation {
+    text-align: center;   
+}
+.reservation-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.reservation-date {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+.button-search {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #756257;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.subscription {
+    text-align: center;
+    background-image: url("../img/footer.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.subscription-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.subscription-text {
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.subscription-button button {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-transform: uppercase;
+}
+.footer-contacts {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+.htmlacademy-link {
+    color:#000000;
+    text-decoration: none;
+    text-align: center;
+}
+.foto-header-catalog {
+    background-image: url("../img/catalog-header.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+.inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+.inner-navigation {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.options-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+.control {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+.options-application {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-align: center;
+}
+.options-discharge {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.found {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.housing-info-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+.housing-info-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+.housing-info-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #756257;
+}
+.button-blue {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+}
+.button-grin {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #7DB54F;
+}
+.housing-rating {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #F2F2F2;
+}
+.button-download {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+}
+.pagination-link {
+    color: #FFFFFF;
+    background-color: #83B3D3;
+}
+.pagination-current {
+    color: black;
+    background-color: #E5E5E5;
+}
+.subscription-white {
+    text-align: center;
+    color: #000000;
+}
+.subscription-title-black {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.subscription-text-black {
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
