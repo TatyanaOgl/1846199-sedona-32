@@ -12,13 +12,33 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 body {
-    width: 1200px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans" sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    background-color: #FFFFFF;
+}
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.navigation-list {
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    width: 300px;
+}
+.navigation-user {
+    max-width: 260px;
+    margin-left: auto;
 }
 .navigation-link {
     font-size: 20px;
@@ -28,10 +48,21 @@ body {
     text-decoration: none;
     color: #000000;
 }
+.main-container {
+    flex-grow: 1;
+}
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
 .greetings {
     background-image: url("../img/header.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+.greetings img { 
+    display: block;
+    margin: 0 auto;
 }
 .advantages-header{
     text-align: center;
@@ -47,9 +78,29 @@ body {
     font-size: 22px;
     color: #333333;
 }
+.advantages-list {
+    margin: 0;
+    padding: 0;
+}
+.advantages-general {
+    display: flex;
+    justify-content: space-between;
+}
+.general-description {
+    width: 400px;
+}
+.advantages-recommendations {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.advantages-photo1 .advantages-photo2 {
+    width: 800px;
+}
 .color-blue {
     color: #FFFFFF;
     background-color: #83B3D3;
+    text-align: center;
 }
 .color-blue h3 {
     font-weight: 700;
@@ -77,6 +128,11 @@ body {
 }
 .blue-road {
     background-color: rgba(131, 179, 211, 0.2);
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 .reservation {
     text-align: center;   
@@ -128,6 +184,16 @@ body {
     background-color: #83B3D3;
     text-transform: uppercase;
 }
+.page-footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-social-list {
+    width: 110px;
+    margin-right: auto;
+}
 .footer-contacts {
     font-weight: 400;
     font-size: 40px;
@@ -138,6 +204,8 @@ body {
     color: #000000;
 }
 .htmlacademy-link {
+    width: 115px;
+    margin-left: auto;
     color:#000000;
     text-decoration: none;
     text-align: center;
@@ -259,9 +327,10 @@ body {
     color: black;
     background-color: #E5E5E5;
 }
-.subscription-white {
+.subscription-page {
     text-align: center;
     color: #000000;
+    background-image: none;
 }
 .subscription-title-black {
     font-weight: 700;
