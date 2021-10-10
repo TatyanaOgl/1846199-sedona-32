@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 @font-face {
     font-family: "PT Sans"; 
     font-style: normal;
