@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 @font-face {
     font-family: "PT Sans"; 
     font-style: normal;
@@ -18,8 +12,13 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -71,8 +70,6 @@ img {
 }
 .main-container {
     flex-grow: 1;
-}
-.page-container {
     margin: 0 auto;
 }
 .greetings {
@@ -363,4 +360,26 @@ img {
     font-size: 22px;
     line-height: 26px;
     color: #000000;
+}
+.side-indent {
+    padding: 0 72px;
+}
+.inner-navigation {
+    display: flex;
+}
+.options-filter {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-group {
+    display: flex;
+}
+.housing-options {
+    display: flex;
+    justify-content: space-between;
+}
+.housing-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
