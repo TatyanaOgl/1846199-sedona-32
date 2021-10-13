@@ -40,7 +40,7 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(100%);
-  }
+}
 img {
     display: block;
     margin: 0 auto;
@@ -110,6 +110,10 @@ img {
 .advantages-header{
     text-align: center;
 }
+.advantages {
+    margin-top: 79px;
+    margin-bottom: 91px;
+}
 .advantages-header h1 {
     font-size: 30px;
     font-weight: 700;
@@ -124,8 +128,6 @@ img {
     font-weight: 400;
     font-size: 22px;
     color: #333333;
-    margin-top: 0;
-    margin-bottom: 79px;
 }
 .advantages-list {
     margin: 0;
@@ -144,6 +146,8 @@ img {
     justify-content: space-between;
     text-align: center;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .advantages-recommendations-item {
     padding-top: 91px;
@@ -156,12 +160,17 @@ img {
     padding-bottom: 20px;
     margin: 0;
 }
+.advantages-description {
+    margin: 0;
+}
 .advantages-description-text {
     margin: 0;
+    color: #333333;
 }
 .advantages-photo1 .advantages-photo2 {
     width: 800px;
     height: 384px;
+    margin-bottom: 0;
 }
 .color-blue {
     color: #FFFFFF;
@@ -184,9 +193,6 @@ img {
     text-transform: uppercase;
     line-height: 28px;
 }
-.advantages-description-text {
-    color: #333333;
-}
 .advantages-number {
     color: #333333;
 }
@@ -201,11 +207,17 @@ img {
 }
 .list {
     display: flex;
-    justify-content: space-between;
     text-align: center;
 }
+.advantages-item-list {
+    padding-top: 98px;
+    padding-bottom: 77px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
 .reservation {
-    text-align: center;   
+    text-align: center;
+    margin-bottom: 91px;
 }
 .reservation-title {
     font-weight: 700;
@@ -213,12 +225,15 @@ img {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
+    padding-bottom: 15px;
 }
 .reservation-date {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     color: #333333;
+    margin-top: 15px;
+    margin-bottom: 73px;
 }
 .button-search {
     font-weight: 700;
@@ -228,12 +243,18 @@ img {
     background-color: #756257;
     text-transform: uppercase;
     text-decoration: none;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 91px;
 }
 .subscription {
     text-align: center;
     background-image: url("../img/footer.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    padding-bottom: 94px;
 }
 .subscription-title {
     font-weight: 700;
@@ -241,11 +262,16 @@ img {
     line-height: 36px;
     color: #FFFFFF;
     text-transform: uppercase;
+    padding-top: 94px;
+    padding-bottom: 15px;
 }
 .subscription-text {
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
+    padding-bottom: 26px;
+    margin-top: 15px;
+    margin-bottom: 26px;
 }
 .subscription-button button {
     font-weight: 700;
@@ -253,16 +279,34 @@ img {
     color: #FFFFFF;
     background-color: #83B3D3;
     text-transform: uppercase;
+    padding: 20px 30px;
+}
+.subscription-button input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 270px;
+
 }
 .page-footer {
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
+    justify-content: space-between;
     margin-top: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 .footer-social-list {
-    width: 110px;
+    display: flex;
+    flex-wrap: wrap;
     margin-right: auto;
+    list-style-type: none;
+}
+.footer-social-item {
+    width: 20px;
+    height: 25px;
+    margin-right: 29px;
+}
+.footer-social-item:nth-child(3n) {
+    margin-right: 0;
 }
 .footer-contacts {
     font-weight: 400;
@@ -285,27 +329,57 @@ img {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #FFFFFF;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+.side-indent {
+    padding: 0 72px;
 }
 .inner-header-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
+    margin: 0;
+    padding-top: 35px;
 }
 .inner-navigation {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 45px;
+    padding-left: 0;
+}
+.inner-button-item {
+    margin-right: 26px;
+}
+.options-filter {
+    display: flex;
+    justify-content: space-between;
 }
 .options-filter-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
 }
+.options-filter-list {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.options-filter-item {
+    margin-bottom: 13px;
+}
 .control {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+}
+.flex-group {
+    display: flex;
 }
 .options-application {
     font-weight: 700;
@@ -321,24 +395,50 @@ img {
     text-align: center;
     color: #FFFFFF;
 }
+.housing-options {
+    display: flex;
+    justify-content: space-between;
+}
 .found {
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
     text-transform: uppercase;
     color: #000000;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+.housing-list {
+    list-style-type: none;
+    padding: 0;
+}
+.housing-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 61px;
+}
+.housing-info-img img {
+    margin: 0;
 }
 .housing-info-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+    margin: 0;
 }
 .housing-info-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     color: #333333;
+}
+.housing-info-view {
+    margin-right: 78px;
+}
+.housing-info-legend {
+    margin-left: 37px;
 }
 .housing-info-button {
     font-weight: 700;
@@ -349,6 +449,11 @@ img {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #756257;
+    padding: 10px 20px;
+    margin-right: 8px;
+}
+.button-housing-legend {
+    margin-top: 31px;
 }
 .button-blue {
     font-weight: 700;
@@ -359,6 +464,7 @@ img {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #83B3D3;
+    padding: 10px 20px;
 }
 .button-grin {
     font-weight: 700;
@@ -369,6 +475,17 @@ img {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #7DB54F;
+    padding: 10px 20px;
+}
+.housing-rating-legend {
+    margin-left: auto;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+}
+.rating-star {
+    margin-right: 7px;
 }
 .housing-rating {
     font-weight: 400;
@@ -378,24 +495,52 @@ img {
     text-transform: uppercase;
     color: #333333;
     background-color: #F2F2F2;
+    padding: 10px 20px;
 }
 .button-download {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #83B3D3;
+    text-align: center;
+    padding: 15px;
+}
+.pagination-link-pages {
+    display: flex;
+    justify-content: space-between;
+}
+.pagination {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.pagination-item {
+    margin-top: 61px;
+    margin-bottom: 89px;
+    margin-right: 7px;
 }
 .pagination-link {
     color: #FFFFFF;
     background-color: #83B3D3;
+    padding: 15px 20px;
 }
 .pagination-current {
     color: black;
     background-color: #E5E5E5;
+}
+.sorting-type {
+    margin-top: 70px;
+}
+.select-control {
+    margin-left: 51px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
 }
 .subscription-page {
     text-align: center;
@@ -414,20 +559,6 @@ img {
     line-height: 26px;
     color: #000000;
 }
-.side-indent {
-    padding: 0 72px;
-}
 .inner-navigation {
     display: flex;
-}
-.options-filter {
-    display: flex;
-    justify-content: space-around;
-}
-.flex-group {
-    display: flex;
-}
-.housing-options {
-    display: flex;
-    justify-content: space-between;
 }
