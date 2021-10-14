@@ -54,6 +54,8 @@ img {
     padding-right: 71px;
 }
 .wrapper-logo {
+    position: relative;
+    z-index: 1;
     margin-bottom: -5px;
 }
 .navigation-list {
@@ -66,6 +68,9 @@ img {
     max-width: 457px;
     width: 100%;
 }
+.navigation-item {
+    margin-right: 33px;
+}
 .navigation-link {
     display: block;
     font-size: 20px;
@@ -76,30 +81,51 @@ img {
     color: #000000;
     padding-top: 19px;
     padding-bottom: 20px;
-    margin-right: 33px;
 }
 .navigation-user {
     margin-left: auto;
     margin-right: 0;
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navigation-user-link {
+    display: block;
+    margin-left: 20px;
+    text-decoration: none;
 }
 .navigation-link-search {
+    display: block;
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
-    min-width: 31px;
-    min-height: 27px;
-    margin-top: 24px;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    /*margin-top: 24px;*/
 }
 .navigation-link-favorites {
+    position: relative;
+    width: 31px;
+    height: 27px;
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
-    min-width: 31px;
-    min-height: 27px;
-    margin-top: 24px;
+    background-position: left 5px;
+}
+.favorites-number {
+    position: relative;
+    top: -5px;
+    right: 0;
+    display: inline-block;
+    padding: 4px 6px;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: -0.1em;
+    background-color: #7db54f;
+    border-radius: 50%;
 }
 .navigation-link-button {
     width: 160px;
-    height: 37px;
+    padding: 9px;
     color: #FFFFFF;
     background-color: #756257;
     text-decoration: none;
@@ -107,8 +133,7 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
-    padding-top: 9px;
-    margin-top: 14px;
+    border-radius: 4px;
 }
 .main-container {
     flex-grow: 1;
@@ -120,7 +145,6 @@ img {
     background-repeat: no-repeat;
     padding-top: 51px;
     padding-bottom: 83px;
-    margin-bottom: 63px;
     background-position: bottom;
 }
 .greetings img { 
@@ -130,7 +154,8 @@ img {
 .advantages-header{
     text-align: center;
     max-width: 660px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    padding-top: 63px;
 }
 .advantages {
     padding-top: 65px;
@@ -332,10 +357,12 @@ img {
     align-items: center;
 }
 .footer-social-item {
+    margin-right: 25px;
+}
+.footer-social-item a {
     display: block;
     width: 20px;
     height: 25px;
-    margin-right: 29px;
 }
 .footer-social-item:last-child {
     margin-right: 0;
@@ -570,6 +597,7 @@ img {
     text-align: center;
     color: #FFFFFF;
     background-color: #83B3D3;
+    text-decoration: none;
 }
 .pagination-current {
     color: black;
