@@ -37,9 +37,7 @@
                 <h1 class="inner-header-title">Гостиницы Седоны</h1>
                 <ul class="inner-navigation">
                     <li class="inner-button-item">
-                        <a class="inner-button" href="index.html">
-                        <span class="visually-hidden">Главная</span>
-                        </a>
+                        <a class="inner-button" href="index.html" aria-label="Главная"></a>
                     </li>
                     <li class="inner-button-item">
                         <a class="inner-link">Гостиницы</a>
@@ -53,15 +51,15 @@
                         <legend class="options-filter-title">Инфраструктура:</legend>
                         <ul class="options-filter-list">
                             <li class="options-filter-item">
-                                <input class="visually-hidden control-input" type="checkbox" name="pool" id="pool"checked>
+                                <input class="control-input" type="checkbox" name="pool" id="pool"checked>
                                 <label class="control" for="pool">Бассейн</label>
                             </li>
                             <li class="options-filter-item">
-                                <input class="visually-hidden control-input" type="checkbox" name="parking" id="parking" checked>
+                                <input class="control-input" type="checkbox" name="parking" id="parking" checked>
                                 <label class="control" for="parking">Парковка</label>
                             </li>
                             <li class="options-filter-item">
-                                <input class="visually-hidden control-input" type="checkbox" name="wi-fi" id="wi-fi">
+                                <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">
                                 <label class="control" for="wi-fi">Wi-Fi</label>
                             </li>
                         </ul>
@@ -70,15 +68,15 @@
                         <legend class="options-filter-title">Тип жилья:</legend>
                         <ul class="options-filter-list">
                             <li class="options-filter-item">
-                                <input class="visually-hidden control-input" type="radio" name="type-lodging" id="hotel" value="hotel" checked>
+                                <input class="control-input" type="radio" name="type-lodging" id="hotel" value="hotel" checked>
                                 <label class="control-label control" for="hotel">Гостиница</label>
                             </li>
                             <li class="options-filter-item">
-                                <input class="visually-hidden control-input" type="radio" name="type-lodging" id="Motel" value="Motel">
+                                <input class="control-input" type="radio" name="type-lodging" id="Motel" value="Motel">
                                 <label class="control-label control" for="Motel">Мотель</label>
                             </li>
                             <li class="options-filter-item">
-                                <input class="visually-hidden control-input" type="radio" name="type-lodging" id="Apartments" value="Apartments">
+                                <input class="control-input" type="radio" name="type-lodging" id="Apartments" value="Apartments">
                                 <label class="control-label control" for="Apartments">Апартаменты</label>
                             </li>
                         </ul>
@@ -117,28 +115,22 @@
             <section class="housing-options">
                 <p class="found">Найдено гостиниц: 38</p>
                 <select class="select-control" id="group" name="group">
-                    <option value="cheap">Сначала дешёвые</option>
+                    <option value="cheap" selected>Сначала дешёвые</option>
                     <option value="expensive">Сначала дорогие</option>
                     <option value="popular">Сначала популярные</option>
                 </select>
                 <div class="show-cards">
-                    <a class="button button-cards" href="#">
-                        <span class="visually-hidden">Показать карточки</span>
-                    </a>
-                    <a class="button button-show-one" href="#">
-                        <span class="visually-hidden">Показать по одному</span>
-                    </a>
-                    <a class="button button-list" href="#">
-                        <span class="visually-hidden">Показать список</span>
-                    </a>
+                    <a class="button button-cards" href="#" aria-label="Показать карточки"></a>
+                    <a class="button button-show-one" href="#" aria-label="Показать по одному"></a>
+                    <a class="button button-list" href="#" aria-label="Показать список"></a>
                 </div>
             </section>
             <section class="housing">
                 <ul class="housing-list">
                     <li class="housing-info">
-                            <div class="housing-info-img">
+                            <a class="housing-info-img" href="#">
                                 <img src="img/catalog/hotel-1.jpg" width="180" height="120" alt="Фото гостиницы">
-                            </div>
+                            </a>
                             <div class="housing-info-legend">
                                 <h3 class="housing-info-title">Amara Resort & Spa</h3>
                                 <div class="housing-info-description">
@@ -161,9 +153,9 @@
                         </div>
                     </li>
                     <li class="housing-info">
-                            <div class="housing-info-img">
+                            <a class="housing-info-img" href="#">
                                 <img src="img/catalog/hotel-2.jpg" width="180" height="120" alt="Фото мотеля">
-                            </div>
+                            </a>
                             <div class="housing-info-legend">
                                 <h3 class="housing-info-title">Desert Quail Inn</h3>
                                 <div class="housing-info-description">
@@ -185,9 +177,9 @@
                         </div>
                     </li>
                     <li class="housing-info">
-                            <div class="housing-info-img">
+                            <a class="housing-info-img" href="#">
                                 <img src="img/catalog/hotel-3.jpg" width="180" height="120" alt="Фото апартамента">
-                            </div>
+                            </a>
                             <div class="housing-info-legend">
                                 <h3 class="housing-info-title">Villas at Poco Diablo</h3>
                                 <div class="housing-info-description">
@@ -208,9 +200,9 @@
                         </div>
                     </li>
                     <li class="housing-info">
-                            <div class="housing-info-img">
+                            <a class="housing-info-img" href="#">
                                 <img src="img/catalog/hotel-4.jpg" width="180" height="120" alt="Фото гостиницы">
-                            </div>
+                            </a>
                             <div class="housing-info-legend">
                                 <h3 class="housing-info-title">GreenTree Inn</h3>
                                 <div class="housing-info-description">

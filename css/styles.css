@@ -415,6 +415,19 @@ img {
 .inner-button-item {
     margin-right: 26px;
 }
+.inner-button {
+    background-image: url("../img/house_cat.svg");
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    padding: 17px;
+    padding-left: 0;
+    position: relative;
+    background-position: center;
+}
+.options-filter-group {
+    padding: 0;
+}
 .options-filter {
     display: flex;
     justify-content: space-between;
@@ -428,6 +441,7 @@ img {
     list-style-type: none;
     margin-top: 30px;
     margin-bottom: 70px;
+    padding: 0;
 }
 .options-filter-item {
     margin-bottom: 13px;
@@ -437,8 +451,16 @@ img {
     font-size: 18px;
     line-height: 23px;
 }
+.control-input {
+    width: 20px;
+    height: 20px;
+}
 .flex-group {
     display: flex;
+}
+.options-button {
+    display: flex;
+    flex-direction: column;
 }
 .options-application {
     font-weight: 700;
@@ -447,6 +469,9 @@ img {
     color: #FFFFFF;
     background-color: #83B3D3;
     text-align: center;
+    text-transform: uppercase;
+    padding: 17px 35px;
+    border-radius: 4px;
 }
 .options-discharge {
     font-size: 18px;
@@ -457,6 +482,8 @@ img {
 .housing-options {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 45px;
 }
 .found {
     font-weight: 700;
@@ -465,11 +492,60 @@ img {
     text-transform: uppercase;
     color: #000000;
     margin: 0;
-    margin-top: 50px;
-    margin-bottom: 45px;
+    margin-right: auto;
+}
+.select-control {
+    color: #333333;
+    font-size: 18px;
+    line-height: 23px;
+    margin-right: 81px;
+    border-radius: 4px;
+}
+.show-cards {
+    display: flex;
+}
+.button-cards {
+    display: block;
+    background-image: url("../img/cards.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    padding: 17px;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    position: relative;
+    background-position: center;
+    margin-right: 8px;
+}
+.button-show-one {
+    display: block;
+    background-image: url("../img/one_cat.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    padding: 17px;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    position: relative;
+    background-position: center;
+    margin-right: 8px;
+}
+.button-list {
+    display: block;
+    background-image: url("../img/list_cat.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    padding: 17px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    position: relative;
+    background-position: center;
 }
 .housing {
+    padding-top: 31px;
     padding-bottom: 30px;
+    border-top: 1px solid #E6E6E6;
     border-bottom: 1px solid #e6e6e6;
 }
 .housing-list {
@@ -477,11 +553,16 @@ img {
     padding: 0;
 }
 .housing-info {
-    display: flex;
-    margin-bottom: 61px;
+    display: grid;
+    grid-template-columns: 180px 1fr 170px;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E6E6E6;
 }
 .housing-info-img img {
     margin: 0;
+    grid-column: 1 / 2;
 }
 .housing-info-title {
     font-weight: 700;
@@ -497,10 +578,10 @@ img {
     color: #333333;
 }
 .housing-info-view {
-    margin-right: 78px;
+    margin-right: 57px;
 }
 .housing-info-legend {
-    margin-left: 37px;
+    grid-column: 2 / 3;
 }
 .housing-info-button {
     font-weight: 700;
@@ -515,7 +596,7 @@ img {
     margin-right: 8px;
 }
 .button-housing-legend {
-    margin-top: 31px;
+    margin-top: 25px;
 }
 .button-blue {
     font-weight: 700;
@@ -540,10 +621,12 @@ img {
     padding: 10px 20px;
 }
 .housing-rating-legend {
-    margin-left: auto;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: end;
 }
 .rating {
-    display: flex;
+     display: flex;
     justify-content: center;
 }
 .rating-star {
@@ -557,7 +640,8 @@ img {
     text-transform: uppercase;
     color: #333333;
     background-color: #F2F2F2;
-    padding: 10px 20px;
+    padding: 10px 34px;
+    margin-top: 63px;
 }
 .button-download {
     display: block;
@@ -598,16 +682,13 @@ img {
     color: #FFFFFF;
     background-color: #83B3D3;
     text-decoration: none;
+    border-radius: 4px;
 }
 .pagination-current {
     color: black;
     background-color: #E5E5E5;
 }
-.select-control {
-    margin-left: 51px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 50px;
+.sorting-type {
 }
 .subscription-page {
     background: none;
