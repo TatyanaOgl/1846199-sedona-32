@@ -554,7 +554,7 @@ img {
 }
 .housing-info {
     display: grid;
-    grid-template-columns: 180px 1fr 170px;
+    grid-template-columns: 180px 1fr 160px;
     gap: 30px;
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -562,7 +562,6 @@ img {
 }
 .housing-info-img img {
     margin: 0;
-    grid-column: 1 / 2;
 }
 .housing-info-title {
     font-weight: 700;
@@ -580,8 +579,7 @@ img {
 .housing-info-view {
     margin-right: 57px;
 }
-.housing-info-legend {
-    grid-column: 2 / 3;
+.housing-info-price {
 }
 .housing-info-button {
     font-weight: 700;
@@ -620,13 +618,8 @@ img {
     background-color: #7DB54F;
     padding: 10px 20px;
 }
-.housing-rating-legend {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    justify-self: end;
-}
 .rating {
-     display: flex;
+    display: flex;
     justify-content: center;
 }
 .rating-star {
@@ -640,7 +633,7 @@ img {
     text-transform: uppercase;
     color: #333333;
     background-color: #F2F2F2;
-    padding: 10px 34px;
+    padding: 10px 30px;
     margin-top: 63px;
 }
 .button-download {
