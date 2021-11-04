@@ -28,6 +28,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .visually-hidden {
     position: absolute;
@@ -63,6 +65,7 @@ img {
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
+    margin-left: -10px;
     margin-right: auto;
     padding: 0;
     max-width: 457px;
@@ -70,6 +73,7 @@ img {
 }
 .navigation-item {
     position: relative;
+    margin-right: 8px;
 }
 .navigation-link {
     display: block;
@@ -97,9 +101,9 @@ img {
 }
 .navigation-link-active::before {
     position: absolute;
-    right: 5px;
+    right: 10px;
     bottom: 0;
-    left: 5px;
+    left: 10px;
     height: 2px;
     background-color: #756257;
     content: "";
@@ -113,18 +117,16 @@ img {
 .navigation-user-link {
     display: block;
     text-decoration: none;
-    margin-left: 20px;
     padding: 10px;
 }
 .navigation-user-link:focus {
-    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 10px;
-    outline: none;
 }
 .navigation-user-link:active {
     color: #756257;
     opacity: 0.3;
-    box-shadow: none;
+    outline: none;
 }
 .navigation-user-link:hover {
     fill: #756257;
@@ -151,6 +153,8 @@ img {
     color: #FFFFFF;
 }
 .navigation-link-button {
+    display: block;
+    margin-left: 24px;
     width: 160px;
     padding: 9px;
     color: #FFFFFF;
@@ -167,14 +171,12 @@ img {
     color: #FFFFFF;
 }
 .navigation-link-button:focus {
-    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 10px;
-    outline: none;
 }
 .navigation-link-button:active {
-    color: #FFFFFF;
-    opacity: 0.3;
-    box-shadow: none;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
 }
 .main-container {
     flex-grow: 1;
@@ -337,8 +339,7 @@ img {
     outline: none;
 }
 .button-search:active {
-    color: #FFFFFF;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
 }
 .subscription {
     text-align: center;
@@ -391,8 +392,7 @@ img {
     outline: none;
 }
 .subscription-form button:active {
-    color: #FFFFFF;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
 }
 .subscription-form input {
     width: 100%;
@@ -421,7 +421,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    padding-top: 20px;
+    padding-top: 22px;
     padding-bottom: 15px;
 }
 .footer-social-list {
@@ -431,27 +431,26 @@ img {
     padding: 0;
     list-style: none;
 }
+.footer-social-item {
+    margin-left: -7px;
+}
 .footer-social-item a {
-    display: block;
-    position: relative;
+    display: flex;
     margin-right: 8px;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 }
 .social-icon {
-    position: absolute;
     fill: #83B3D3;
-    top: 10px;
-    left: 10px;
+    margin: auto;
     
 }
 .social-icon:hover {
     fill: #68A2CA;
 }
 .footer-social-item a:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 10px;
-    outline: none;
 }
 .footer-social-item a:active {
     color: #68A2CA;
@@ -471,6 +470,7 @@ img {
     text-transform: uppercase;
     color: #000000;
     padding: 15px;
+    margin-left: 20px;
 }
 .footer-contacts:hover {
     color: #756257;
@@ -491,6 +491,7 @@ img {
     height: 70px;
     padding-left: 22px;
     margin-left: auto;
+    margin-right: -21px;
     color:#000000;
     text-decoration: none;  
     
@@ -503,9 +504,8 @@ img {
     fill: #756257;
 }
 .htmlacademy-link:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 10px;
-    outline: none;
 }
 .htmlacademy-svg:active {
     fill: #756257;
