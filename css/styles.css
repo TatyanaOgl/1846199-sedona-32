@@ -60,6 +60,11 @@ img {
     z-index: 1;
     margin-bottom: -5px;
 }
+.wrapper-logo-catalog:focus {
+    outline: 3px solid #83B3D3;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
@@ -90,14 +95,13 @@ img {
     color: #756257;
 }
 .navigation-link:focus {
-    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 10px;
-    outline: none;
 }
 .navigation-link:active {
     color: #756257;
     opacity: 0.3;
-    box-shadow: none;
+    outline: none;
 }
 .navigation-link-active::before {
     position: absolute;
@@ -335,8 +339,7 @@ img {
     background-color: #615048;
 }
 .button-search:focus {
-    box-shadow: inset 0 0 0 3px #83B3D3;
-    outline: none;
+    outline: 3px solid #83B3D3;
 }
 .button-search:active {
     color: rgba(255, 255, 255, 0.3);
@@ -388,8 +391,7 @@ img {
     cursor: pointer;
 }
 .subscription-form button:focus {
-    box-shadow: inset 0 0 0 3px #756257;
-    outline: none;
+    outline: 3px solid #756257;
 }
 .subscription-form button:active {
     color: rgba(255, 255, 255, 0.3);
@@ -423,6 +425,7 @@ img {
     margin-top: auto;
     padding-top: 22px;
     padding-bottom: 15px;
+    padding-left: 60px;
 }
 .footer-social-list {
     display: flex;
@@ -432,11 +435,10 @@ img {
     list-style: none;
 }
 .footer-social-item {
-    margin-left: -7px;
+    margin-right: 8px;
 }
 .footer-social-item a {
     display: flex;
-    margin-right: 8px;
     width: 40px;
     height: 40px;
 }
@@ -470,7 +472,7 @@ img {
     text-transform: uppercase;
     color: #000000;
     padding: 15px;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .footer-contacts:hover {
     color: #756257;
@@ -479,6 +481,7 @@ img {
     box-shadow: inset 0 0 0 3px #83B3D3;
     outline: none;
     border-radius: 10px;
+    color: #756257;
 }
 .footer-contacts:active {
     color: #756257;
@@ -529,7 +532,7 @@ img {
     line-height: 78px;
     color: #FFFFFF;
     margin: 0;
-    padding-top: 35px;
+    padding-top: 31px;
 }
 .inner-navigation {
     font-size: 16px;
@@ -537,30 +540,36 @@ img {
     color: #FFFFFF;
     list-style-type: none;
     margin: 0;
-    margin-top: 5px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     padding-left: 0;
+    position: relative;
 }
 .inner-button-item {
-    margin-right: 13px;
+    padding-right: 39px;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center right 8px;
+}
+.inner-button-item:last-child {
+    background-image: none;
+}
+.inner-button-item:hover {
+    opacity: 0.6;
+}
+.inner-button:focus {
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 .inner-button {
     background-image: url("../img/house_cat.svg");
     background-repeat: no-repeat;
     width: 12px;
     height: 12px;
-    padding: 17px;
-    padding-left: 0;
-    position: relative;
+    top: -3px;
+    left: -3px;
+    position: absolute;
     background-position: center;
-}
-.arrow {
-    background-image: url("../img/arrow.svg");
-    background-repeat: no-repeat;
-    width: 5px;
-    height: 8px;
-    margin-top: 7px;
-    margin-right: 13px;
+    padding: 11px;
 }
 .options-filter-group {
     padding: 0;
@@ -609,12 +618,38 @@ img {
     text-transform: uppercase;
     padding: 17px 35px;
     border-radius: 4px;
+    border: none;
+}
+.options-application:hover {
+    background-color: #68A2CA;
+}
+.options-application:focus {
+    background-color: #68A2CA;
+    outline: 3px solid #FFFFFF;
+}
+.options-application:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
 }
 .options-discharge {
     font-size: 18px;
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.options-discharge:hover {
+    opacity: 0.6;
+}
+.options-discharge:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+.options-discharge:active {
+    color: rgba(255, 255, 255, 0.3);
+    border: none;
 }
 .housing-options {
     display: flex;
@@ -640,6 +675,20 @@ img {
 }
 .show-cards {
     display: flex;
+}
+.button-cards:hover,
+.button-show-one:hover,
+.button-list:hover {
+    outline: 2px solid #83B3D3;
+    border-radius: 4px;
+    border: none;
+}
+.button-cards:focus,
+.button-show-one:focus,
+.button-list:focus {
+    outline: 2px solid #83B3D3;
+    border-radius: 4px;
+    border: none;
 }
 .button-cards {
     display: block;
@@ -674,14 +723,16 @@ img {
     width: 48px;
     height: 48px;
     padding: 17px;
-    border: 2px solid #000000;
-    border-radius: 4px;
     position: relative;
     background-position: center;
 }
+.list-active {
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
 .housing {
-    padding-top: 31px;
-    padding-bottom: 30px;
+    padding-top: 11px;
+    padding-bottom: 28px;
     border-top: 1px solid #E6E6E6;
     border-bottom: 1px solid #e6e6e6;
 }
@@ -692,17 +743,47 @@ img {
 .housing-info {
     display: grid;
     grid-template-columns: 180px 1fr 160px;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 38px;
+    margin-bottom: 24px;
     padding-bottom: 30px;
     border-bottom: 1px solid #E6E6E6;
 }
-.housing-info-title {
+.housing-info-img {
+    height: 120px;
+}
+.housing-info-img img:hover {
+    opacity: 0.6;
+}
+.housing-info-img:focus {
+    outline: 3px solid #83B3D3;
+}
+.housing-info-img:active {
+    opacity: 0.3;
+    outline: none;
+}
+.housing-info-title a {
+    text-decoration: none;
+    color: #000000;
+}
+.housing-info-title{
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
     margin: 0;
+}
+.housing-info-title a:hover {
+    color: #756257;
+}
+.housing-info-title a:focus {
+    outline: 3px solid #83B3D3;
+    color: rgb(117, 98, 87);
+    border-radius: 4px;
+}
+.housing-info-title a:active {
+    color: #756257;
+    opacity: 0.3;
+    outline: none;
 }
 .housing-info-description {
     font-weight: 400;
@@ -723,12 +804,26 @@ img {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #756257;
-    padding: 16px 33px;
+    padding: 7px 31px;
     margin-right: 8px;
     border-radius: 4px;
 }
+.housing-info-button:hover {
+    background-color: #615048;
+    border-radius: 4px;
+}
+.housing-info-button:focus {
+    outline: 3px solid #83B3D3;
+    background-color: #615048;
+    border-radius: 4px;
+}
+.housing-info-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #615048;
+    outline: none;
+}
 .button-housing-legend {
-    margin-top: 25px;
+    margin-top: 29px;
 }
 .button-housing-legend button {
     border: none;
@@ -742,8 +837,23 @@ img {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #83B3D3;
-    padding: 16px 33px;
+    padding: 11px 21px;
     border-radius: 4px;
+    cursor: pointer;
+}
+.button-blue:hover {
+    background-color: #68A2CA;
+    outline: 1px solid #756257;
+    border-radius: 4px;
+}
+.button-blue:focus {
+    background-color: #68A2CA;
+    outline: 3px solid #756257;
+}
+.button-blue:active {
+    background-color: #68A2CA;
+    color: rgba(255, 255, 255, 0.3);
+    outline: 1px solid #756257;
 }
 .button-grin {
     font-weight: 700;
@@ -756,6 +866,18 @@ img {
     background-color: #7DB54F;
     padding: 16px 33px;
     border-radius: 4px;
+    cursor: pointer;
+}
+.button-grin:hover {
+    background-color: #6C9E42;
+}
+.button-grin:focus {
+    background-color: #6C9E42;
+    outline: 3px solid #756257;
+}
+.button-grin:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
 }
 .housing-rating-legend {
     display: flex;
@@ -791,9 +913,20 @@ img {
     color: #FFFFFF;
     background-color: #83B3D3;
     text-align: center;
-    padding: 15px;
+    padding: 16px;
     max-width: 625px;
     margin: auto;
+}
+.button-download:hover {
+    background-color: #68A2CA;
+}
+.button-download:focus {
+    background-color: #68A2CA;
+    outline: 3px solid #756257;
+}
+.button-download:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
 }
 .pagination-link-pages {
     display: flex;
@@ -822,6 +955,17 @@ img {
     text-decoration: none;
     border-radius: 4px;
 }
+.pagination-link:hover {
+    background-color: #68A2CA;
+}
+.pagination-link:focus {
+    background-color: #68A2CA;
+    outline: 3px solid #756257;
+}
+.pagination-link:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
 .pagination-current {
     color: black;
     background-color: #E5E5E5;
@@ -830,6 +974,7 @@ img {
 }
 .subscription-page {
     background: none;
+    padding-bottom: 138px;
 }
 .subscription-page .subscription-title {
     color: #000000;
