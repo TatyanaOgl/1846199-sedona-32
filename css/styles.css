@@ -715,7 +715,7 @@ img {
     opacity: 0.3;
     outline: none;
 }
-.control {
+.control-label {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -1051,7 +1051,7 @@ img {
 .button-favorites {
     display: inline-block;
     width: 160px;
-    padding: 8px;
+    padding: 7px;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
