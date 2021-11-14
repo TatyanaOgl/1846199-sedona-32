@@ -99,12 +99,12 @@
                         <div class="options-general">
                             <div class="options-price-general">
                                 <div class="options-filter-price">
-                                    <span class="options-filter-input">0</span>
-                                    <span class="filter-absolute">от</span>
+                                    <input class="options-filter-input options-filter-input-min" type="number" name="min-price" id="min" value="0" min="0" max="9000">
+                                    <label class="filter-absolute" for="min">от</label>
                                 </div>
                                 <div class="options-filter-price-max">
-                                    <span class="options-filter-input">9000</span>
-                                    <span class="filter-absolute">до</span>
+                                    <input class="options-filter-input options-filter-input-max" type="number" name="max-price" id="max" value="9000" min="0" max="9000">
+                                    <label class="filter-absolute" for="max">до</label>
                                 </div>
                             </div>
                             <div class="range-scale">
@@ -136,15 +136,11 @@
                         <option value="expensive">Сначала дорогие</option>
                         <option value="popular">Сначала популярные</option>
                     </select>
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.6 6.7001L11.7 1.4001C12 1.1001 12 0.500098 11.7 0.200098C11.4 -0.0999023 10.8 -0.0999023 10.5 0.200098L6 4.9001L1.5 0.200098C1.2 -0.0999023 0.6 -0.0999023 0.3 0.200098C0.1 0.300098 0 0.600098 0 0.800098C0 1.0001 0.1 1.2001 0.3 1.4001L5.4 6.7001C5.7 7.1001 6.3 7.1001 6.6 6.7001Z" fill="black"/>
-                    </svg>
                 </div>
-                <button class="visually-hidden" type="submit">Отсортировать</button>
                 <div class="show-cards">
                     <a class="button button-cards" href="#" aria-label="Показать карточки"></a>
                     <a class="button button-show-one" href="#" aria-label="Показать по одному"></a>
-                    <a class="button button-list list-active" href="#" aria-label="Показать список"></a>
+                    <a class="button button-list button-active" href="#" aria-label="Показать список"></a>
                 </div>
             </section>
             <section class="housing">
@@ -160,8 +156,8 @@
                                     <span class="housing-info-price">От 4000 ₽</span>
                                 </div>
                                 <div class="button-housing-legend">
-                                    <a class="housing-info-button button" href="#">Подробнее</a>
-                                    <button class="button-blue">В избранное</button>
+                                    <a class="housing-info-button" href="#">Подробнее</a>
+                                    <button class="button-favorites">В избранное</button>
                                 </div>
                             </div>
                         <div class="housing-rating-legend">
@@ -185,8 +181,8 @@
                                     <span class="housing-info-price">От 3000 ₽</span>
                                 </div>
                                 <div class="button-housing-legend">
-                                    <a class="housing-info-button button" href="#">Подробнее</a>
-                                    <button class="button-blue">В избранное</button>
+                                    <a class="housing-info-button" href="#">Подробнее</a>
+                                    <button class="button-favorites">В избранное</button>
                                 </div>
                             </div>
                         <div class="housing-rating-legend">
@@ -209,8 +205,8 @@
                                     <span class="housing-info-price">От 2000 ₽</span>
                                 </div>
                                 <div class="button-housing-legend">
-                                    <a class="housing-info-button button" href="#">Подробнее</a>
-                                    <button class="button-grin">В избранном</button>
+                                    <a class="housing-info-button" href="#">Подробнее</a>
+                                    <button class="button-favorites button-favorites-active">В избранном</button>
                                 </div>
                             </div>
                         <div class="housing-rating-legend">
@@ -232,8 +228,8 @@
                                     <span class="housing-info-price">От 3000 ₽</span>
                                 </div>
                                 <div class="button-housing-legend">
-                                    <a class="housing-info-button button" href="#">Подробнее</a>
-                                    <button class="button-blue">В избранное</button>
+                                    <a class="housing-info-button" href="#">Подробнее</a>
+                                    <button class="button-favorites">В избранное</button>
                                 </div>
                             </div>
                         <div class="housing-rating-legend">
@@ -245,7 +241,7 @@
                         </div>
                     </li>
                 </ul>
-                <a class="button button-download" href="#">Загрузить еще</a>
+                <a class="button-download" href="#">Загрузить еще</a>
             </section>
             <section class="pagination-link-pages">
                 <ul class="pagination">
@@ -282,9 +278,6 @@
                         <option value="9">9</option>
                         <option value="10">10</option>
                     </select>
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.6 6.7001L11.7 1.4001C12 1.1001 12 0.500098 11.7 0.200098C11.4 -0.0999023 10.8 -0.0999023 10.5 0.200098L6 4.9001L1.5 0.200098C1.2 -0.0999023 0.6 -0.0999023 0.3 0.200098C0.1 0.300098 0 0.600098 0 0.800098C0 1.0001 0.1 1.2001 0.3 1.4001L5.4 6.7001C5.7 7.1001 6.3 7.1001 6.6 6.7001Z" fill="black"/>
-                    </svg>
                 </div>
             </section>
         </div>
