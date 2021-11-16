@@ -25,8 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-width: 1200px;
-    width: 100%;
+    width: 1200px;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -166,6 +165,7 @@ img {
     margin-left: 24px;
     width: 160px;
     padding: 9px;
+    font-family: "PT Sans", sans-serif;
     color: #FFFFFF;
     background-color: #756257;
     text-decoration: none;
@@ -192,6 +192,7 @@ img {
 }
 .greetings {
     position: relative;
+    background-color: #9dd3eb;
     background-image: url("../img/vector.svg") ,url("../img/header.jpg");
     background-size: 100%, cover;
     background-repeat: no-repeat;
@@ -333,6 +334,7 @@ img {
     max-width: 576px;
     margin: 0 auto;
     padding: 12px;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -353,6 +355,7 @@ img {
 }
 .subscription {
     text-align: center;
+    background-color: #9dd3eb;
     background-image: url("../img/footer.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -382,7 +385,8 @@ img {
 .subscription-form button {
     flex-shrink: 0;
     width: 200px;
-    padding: 20px 0 15px;
+    padding: 15px 0 15px;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -406,6 +410,7 @@ img {
 .subscription-form input {
     width: 100%;
     padding: 15px 19px;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 26px;
     color: #000000;
@@ -433,8 +438,10 @@ img {
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 16px;
     margin-right: auto;
     padding: 0;
+    max-width: 325px;
     list-style: none;
 }
 .footer-social-item {
@@ -475,7 +482,7 @@ img {
     text-transform: uppercase;
     color: #000000;
     padding: 15px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .footer-contacts:hover {
     color: #756257;
@@ -586,6 +593,7 @@ img {
     color: #000000;
 }
 .foto-header-catalog {
+    background-color: #9dd3eb;
     background-image: url("../img/catalog-header.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -631,7 +639,7 @@ img {
     border-radius: 4px;
 }
 .inner-button {
-    background-image: url("../img/house_cat.svg");
+    background-image: url("../img/house-cat.svg");
     background-repeat: no-repeat;
     width: 12px;
     height: 12px;
@@ -643,8 +651,9 @@ img {
 }
 .options-filter-group {
     padding: 0;
-    padding-right: 57px;
+    padding-right: 64px;
     margin-bottom: 20px;
+    margin-left: 0;
     border: none;
 }
 .options-filter {
@@ -721,7 +730,7 @@ img {
     line-height: 23px;
 }
 .flex-group {
-    margin-left: 109px;
+    margin-left: 101px;
 }
 .options-general {
     position: relative;
@@ -820,6 +829,7 @@ img {
     margin-left: auto;
 }
 .options-application {
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -827,8 +837,8 @@ img {
     background-color: #83B3D3;
     text-align: center;
     text-transform: uppercase;
-    padding: 14px 29px;
-    margin-bottom: 20px;
+    padding: 14px 35px;
+    margin-bottom: 18px;
     border-radius: 4px;
     border: none;
 }
@@ -844,6 +854,7 @@ img {
     outline: none;
 }
 .options-discharge {
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 23px;
     text-align: center;
@@ -891,10 +902,11 @@ img {
 }
 .select-control {
     width: 100%;
-    padding: 11px 19px;
+    padding: 11px 16px;
     border: 2px solid #E6E6E6; 
     border-radius: 4px;
     background-position: right 16px center;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 23px;
     color: #333333;
@@ -942,10 +954,10 @@ img {
     background-image: url("../img/cards.svg");
  }
  .button-show-one {
-    background-image: url("../img/one_cat.svg");
+    background-image: url("../img/one-cat.svg");
  }
  .button-list {
-    background-image: url("../img/list_cat.svg");
+    background-image: url("../img/list-cat.svg");
  }
  .button-active {
     border: 2px solid #000000;
@@ -960,14 +972,14 @@ img {
 .housing-list {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 .housing-info {
     display: grid;
     grid-template-columns: 180px 1fr 160px;
     gap: 38px;
-    margin-bottom: 28px;
-    padding-bottom: 30px;
+    margin-bottom: 29px;
+    padding-bottom: 31px;
     border-bottom: 1px solid #E6E6E6;
 }
 .housing-info-img {
@@ -984,6 +996,7 @@ img {
     outline: none;
 }
 .housing-info-title a {
+    position: relative;
     text-decoration: none;
     color: #000000;
 }
@@ -998,9 +1011,19 @@ img {
     color: #756257;
 }
 .housing-info-title a:focus {
-    outline: 3px solid #83B3D3;
+    outline: none;
     color: rgb(117, 98, 87);
     border-radius: 4px;
+}
+.housing-info-title a:focus::before { 
+    position: absolute;  
+    top: -5px;
+    right: -16px;
+    left: -15px;
+    bottom: -4px;
+    border: 3px solid #83B3D3;
+    border-radius: 10px;
+    content: "";
 }
 .housing-info-title a:active {
     color: #756257;
@@ -1021,6 +1044,7 @@ img {
     width: 151px;
     display: inline-block;
     padding: 8px;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -1052,6 +1076,8 @@ img {
     display: inline-block;
     width: 160px;
     padding: 7px;
+    padding-left: 2px;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -1111,12 +1137,13 @@ img {
     text-transform: uppercase;
     color: #333333;
     background-color: #F2F2F2;
-    padding: 10px 32px;
+    padding: 8px 32px;
     margin: auto 0 0;
     border-radius: 4px;
 }
 .button-download {
     display: block;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -1192,7 +1219,7 @@ img {
 }
 .select-control-sorting {
     width: 160px;
-    padding: 11px 17px;
+    padding: 11px 15px;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
     background-position: right 16px center;
@@ -1324,6 +1351,7 @@ img {
     position: absolute;
     right: -1px;
     display: block;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -1484,6 +1512,7 @@ img {
     background-color: #83B3D3;
     border-radius: 10px;
     color: #FFFFFF;
+    font-family: "PT Sans", sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 40px;
